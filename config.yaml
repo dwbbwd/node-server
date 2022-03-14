@@ -6,6 +6,6 @@ Default:
     port: 3306
     username: root
     password: 123456
-    database: test
+    database: simple_shop
     charset: utf8mb4
 

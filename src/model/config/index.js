@@ -1,11 +1,4 @@
-import { Default } from '../../../config.yaml'
-console.log(1);
-console.log(Default);
-const configs = {
-    server: {
-        name: Default.name,
-        port: Default.port || 8081
-    }
-}
-
-export default configs;
+import jsYaml from 'js-yaml';
+import fs from 'fs';
+const cfg = jsYaml.load(fs.readFileSync(process.cwd() + '\\config.yaml', 'utf8'));
+export default cfg.Default;
