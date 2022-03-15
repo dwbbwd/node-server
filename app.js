@@ -2,9 +2,6 @@
 import Koa from 'koa';
 import path from 'path';
 import koaBody from 'koa-body';
-import babelRegister from 'babel-register';
-import fs from 'fs';
-import jsYaml from "js-yaml";
 import User from './src/model/models/users.js';
 // const path = require('path');
 // const Koa = require('koa');
@@ -26,10 +23,6 @@ const body = koaBody({ // 解析body的中间件
         }
     }
 });
-babelRegister();
-
-
-console.log(User);
 
 // 解析body的中间件
 app.use(body)
