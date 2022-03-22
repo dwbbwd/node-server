@@ -1,0 +1,40 @@
+{
+    "name": "server",
+    "version": "1.0.0",
+    "description": "koa+sequelize server template",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server": "nodemon node index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dwbbwd/node-server.git"
+    },
+    "keywords": [],
+    "author": "dwbbwd",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/dwbbwd/node-server/issues"
+    },
+    "homepage": "https://github.com/dwbbwd/node-server#readme",
+    "dependencies": {
+        "js-yaml": "^4.1.0",
+        "koa": "^2.13.4",
+        "koa-body": "^4.2.0",
+        "koa-router": "^10.1.1",
+        "koa-static": "^5.0.0",
+        "koa2-cors": "^2.0.6",
+        "module-alias": "^2.2.2",
+        "mysql2": "^2.3.3",
+        "nodemon": "^2.0.15",
+        "path": "^0.12.7",
+        "sequelize": "^6.17.0",
+        "sequelize-auto": "^0.8.8"
+    },
+    "devDependencies": {
+        "babel-core": "^6.26.3",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-register": "^6.26.0"
+    }
+}
